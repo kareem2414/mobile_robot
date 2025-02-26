@@ -1,6 +1,9 @@
 #include<robot_tools_cpp/simple_tf_kinematics.hpp>
 
 using namespace std::chrono_literals;
+using namespace std::placeholders;
+
+
 
 SimpleTFKinematics::SimpleTFKinematics(const std::string &name)
     : Node(name)
@@ -8,12 +11,16 @@ SimpleTFKinematics::SimpleTFKinematics(const std::string &name)
     , last_x_(0.0)
 {
     static_tf_broadcaster_ = std::make_shared<tf2_ros::StaticTransformBroadcaster>(this);
-    dynamic_tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(*this);    
+    dynamic_tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(*this);
+    tf_buffer_ = std::make_unique<tf2_ros::Buffer>(get_clock());
+    tf_lisenter_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
+
+
 
     static_transform_stamped_.header.stamp = get_clock()->now();
 
-    static_transform_stamped_.header.frame_id = "robot_base";
-    static_transform_stamped_.child_frame_id = "robot_top";
+    static_transform_stamped_.header.frame_id = "odom";
+    static_transform_stamped_.child_frame_id = "robot_base";
 
     static_transform_stamped_.transform.translation.x = 0.0;
     static_transform_stamped_.transform.translation.y = 0.0;
@@ -30,6 +37,8 @@ SimpleTFKinematics::SimpleTFKinematics(const std::string &name)
         static_transform_stamped_.header.frame_id << "and " << static_transform_stamped_.child_frame_id);
 
     timer_ = create_wall_timer(0.1s, std::bind(&SimpleTFKinematics::timerCallback,this));
+    get_transform_srv_ = create_service<robot_msgs::srv::GetTransform>("get_transform",
+         std::bind(&SimpleTFKinematics::getTransformCallback, this, _1,_2));
     }
 
     void SimpleTFKinematics::timerCallback()
@@ -47,6 +56,25 @@ SimpleTFKinematics::SimpleTFKinematics(const std::string &name)
         dynamic_transform_stamped_.transform.rotation.y = 0.0;
         dynamic_transform_stamped_.transform.rotation.z = 0.0;
         dynamic_transform_stamped_.transform.rotation.w = 1.0;
+        
+    }
+    bool SimpleTFKinematics::getTransformCallback(const std::shared_ptr<robot_msgs::srv::GetTransform::Request> req,
+        const std::shared_ptr<robot_msgs::srv::GetTransform::Response> res)
+    {
+        RCLCPP_INFO_STREAM(get_logger(), "Requested Transform between " << req->frame_id << " and " << req->child_frame_id);
+        geometry_msgs::msg::TransformStamped requested_transform;
+        try{
+            requested_transform = tf_buffer_->lookupTransform(req->frame_id, req->child_frame_id, tf2::TimePointZero);
+        }
+        catch(tf2::TransformException &ex){
+            RCLCPP_ERROR_STREAM(get_logger(), "An error occured while transforming from : " <<
+            req->frame_id << " and " << req->child_frame_id << ": " << ex.what());
+            res->success = false;
+            return true;
+        }
+        res->success = true;
+        return true;
+
         
     }
 
