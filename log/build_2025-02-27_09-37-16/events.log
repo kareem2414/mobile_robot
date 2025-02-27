@@ -1,0 +1,835 @@
+[0.000000] (-) TimerEvent: {}
+[0.000367] (robot_control) JobQueued: {'identifier': 'robot_control', 'dependencies': OrderedDict()}
+[0.000435] (robot_description) JobQueued: {'identifier': 'robot_description', 'dependencies': OrderedDict()}
+[0.000502] (robot_msgs) JobQueued: {'identifier': 'robot_msgs', 'dependencies': OrderedDict()}
+[0.000572] (robot_tools_cpp) JobQueued: {'identifier': 'robot_tools_cpp', 'dependencies': OrderedDict([('robot_msgs', '/home/kareem/ros2_ws/src/install/robot_msgs')])}
+[0.000648] (robot_msgs) JobStarted: {'identifier': 'robot_msgs'}
+[0.018683] (robot_control) JobStarted: {'identifier': 'robot_control'}
+[0.027345] (robot_description) JobStarted: {'identifier': 'robot_description'}
+[0.037422] (robot_msgs) JobProgress: {'identifier': 'robot_msgs', 'progress': 'cmake'}
+[0.043393] (robot_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/kareem/ros2_ws/src/robot_msgs', '-DCMAKE_INSTALL_PREFIX=/home/kareem/ros2_ws/src/install/robot_msgs'], 'cwd': '/home/kareem/ros2_ws/src/build/robot_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'kareem'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kareem/ros2_ws/install/robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kareem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1929'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kareem/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kareem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kareem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kareem-virtual-machine:@/tmp/.ICE-unix/1929,unix/kareem-virtual-machine:/tmp/.ICE-unix/1929'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8bc2299c_cb6d_4e48_ac29_cc1459f11390'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QEA022'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kareem/ros2_ws/src/build/robot_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kareem/ros2_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble')]), 'shell': False}
+[0.051371] (robot_control) JobProgress: {'identifier': 'robot_control', 'progress': 'cmake'}
+[0.052491] (robot_control) Command: {'cmd': ['/usr/bin/cmake', '/home/kareem/ros2_ws/src/robot_control', '-DCMAKE_INSTALL_PREFIX=/home/kareem/ros2_ws/src/install/robot_control'], 'cwd': '/home/kareem/ros2_ws/src/build/robot_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'kareem'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kareem/ros2_ws/install/robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kareem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1929'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kareem/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kareem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kareem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kareem-virtual-machine:@/tmp/.ICE-unix/1929,unix/kareem-virtual-machine:/tmp/.ICE-unix/1929'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8bc2299c_cb6d_4e48_ac29_cc1459f11390'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QEA022'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kareem/ros2_ws/src/build/robot_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kareem/ros2_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble')]), 'shell': False}
+[0.068866] (robot_description) JobProgress: {'identifier': 'robot_description', 'progress': 'cmake'}
+[0.071030] (robot_description) Command: {'cmd': ['/usr/bin/cmake', '/home/kareem/ros2_ws/src/robot_description', '-DCMAKE_INSTALL_PREFIX=/home/kareem/ros2_ws/src/install/robot_description'], 'cwd': '/home/kareem/ros2_ws/src/build/robot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'kareem'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kareem/ros2_ws/install/robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kareem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1929'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kareem/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kareem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kareem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kareem-virtual-machine:@/tmp/.ICE-unix/1929,unix/kareem-virtual-machine:/tmp/.ICE-unix/1929'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8bc2299c_cb6d_4e48_ac29_cc1459f11390'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QEA022'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kareem/ros2_ws/src/build/robot_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kareem/ros2_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble')]), 'shell': False}
+[0.095210] (-) TimerEvent: {}
+[0.196631] (-) TimerEvent: {}
+[0.302746] (-) TimerEvent: {}
+[0.340877] (robot_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.342526] (robot_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.346083] (robot_control) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.403368] (-) TimerEvent: {}
+[0.504088] (-) TimerEvent: {}
+[0.568432] (robot_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.568900] (robot_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.569311] (robot_control) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.594612] (robot_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.594950] (robot_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.595113] (robot_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.604406] (-) TimerEvent: {}
+[0.709445] (-) TimerEvent: {}
+[0.791601] (robot_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.792150] (robot_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.793982] (robot_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.806530] (robot_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.807141] (robot_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.807382] (robot_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.808420] (robot_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.808934] (robot_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.809599] (robot_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.809769] (-) TimerEvent: {}
+[0.812022] (robot_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.812395] (robot_control) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.813021] (robot_control) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.818689] (robot_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.819009] (robot_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.819387] (robot_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.910276] (-) TimerEvent: {}
+[1.011065] (-) TimerEvent: {}
+[1.113672] (-) TimerEvent: {}
+[1.144909] (robot_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.145233] (robot_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.147732] (robot_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.158391] (robot_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.159300] (robot_control) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.159762] (robot_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.160244] (robot_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.160552] (robot_control) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.161059] (robot_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.161539] (robot_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.161845] (robot_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.162685] (robot_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.184288] (robot_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.184976] (robot_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.186806] (robot_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.214049] (-) TimerEvent: {}
+[1.315016] (-) TimerEvent: {}
+[1.415950] (-) TimerEvent: {}
+[1.517010] (-) TimerEvent: {}
+[1.560326] (robot_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.565839] (robot_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.591610] (robot_control) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.617889] (-) TimerEvent: {}
+[1.718452] (-) TimerEvent: {}
+[1.819331] (-) TimerEvent: {}
+[1.872626] (robot_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.873303] (robot_control) StdoutLine: {'line': b'-- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[1.874125] (robot_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.877500] (robot_control) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[1.921834] (-) TimerEvent: {}
+[2.022844] (-) TimerEvent: {}
+[2.030658] (robot_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.031245] (robot_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.055693] (robot_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.056119] (robot_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.088045] (robot_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.088556] (robot_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.097833] (robot_description) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.099762] (robot_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.101683] (robot_description) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.108689] (robot_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.114620] (robot_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.123233] (robot_description) StdoutLine: {'line': b'-- Generating done\n'}
+[2.123520] (-) TimerEvent: {}
+[2.127287] (robot_description) StdoutLine: {'line': b'-- Build files have been written to: /home/kareem/ros2_ws/src/build/robot_description\n'}
+[2.135905] (robot_description) CommandEnded: {'returncode': 0}
+[2.136901] (robot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.140130] (robot_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.140467] (robot_description) JobProgress: {'identifier': 'robot_description', 'progress': 'build'}
+[2.140552] (robot_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kareem/ros2_ws/src/build/robot_description', '--', '-j16', '-l16'], 'cwd': '/home/kareem/ros2_ws/src/build/robot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'kareem'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kareem/ros2_ws/install/robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kareem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1929'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kareem/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kareem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kareem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kareem-virtual-machine:@/tmp/.ICE-unix/1929,unix/kareem-virtual-machine:/tmp/.ICE-unix/1929'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8bc2299c_cb6d_4e48_ac29_cc1459f11390'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QEA022'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kareem/ros2_ws/src/build/robot_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kareem/ros2_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble')]), 'shell': False}
+[2.189909] (robot_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.190324] (robot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.224446] (-) TimerEvent: {}
+[2.239669] (robot_description) CommandEnded: {'returncode': 0}
+[2.241020] (robot_description) JobProgress: {'identifier': 'robot_description', 'progress': 'install'}
+[2.261746] (robot_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kareem/ros2_ws/src/build/robot_description'], 'cwd': '/home/kareem/ros2_ws/src/build/robot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'kareem'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kareem/ros2_ws/install/robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kareem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1929'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kareem/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kareem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kareem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kareem-virtual-machine:@/tmp/.ICE-unix/1929,unix/kareem-virtual-machine:/tmp/.ICE-unix/1929'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8bc2299c_cb6d_4e48_ac29_cc1459f11390'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QEA022'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kareem/ros2_ws/src/build/robot_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kareem/ros2_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble')]), 'shell': False}
+[2.279720] (robot_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.280260] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/meshes\n'}
+[2.280507] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/meshes/left_wheel.STL\n'}
+[2.281603] (robot_control) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.290761] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/meshes/base_link.STL\n'}
+[2.324682] (-) TimerEvent: {}
+[2.351085] (robot_control) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.351701] (robot_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.410022] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/meshes/rear_caster.STL\n'}
+[2.414637] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/meshes/front_caster.STL\n'}
+[2.418687] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/meshes/right_wheel.STL\n'}
+[2.424821] (-) TimerEvent: {}
+[2.431679] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/meshes/imu_link.STL\n'}
+[2.434353] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/models\n'}
+[2.434884] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/models/ground_plane\n'}
+[2.435364] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/models/ground_plane/model.config\n'}
+[2.435881] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/models/ground_plane/model-1_4.sdf\n'}
+[2.436325] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/models/ground_plane/model-1_2.sdf\n'}
+[2.437129] (robot_control) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.437465] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/models/ground_plane/model-1_3.sdf\n'}
+[2.438128] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/models/ground_plane/model.sdf\n'}
+[2.438847] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/models/sun\n'}
+[2.439186] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/models/sun/model.config\n'}
+[2.439829] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/models/sun/model-1_4.sdf\n'}
+[2.440527] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/models/sun/model-1_2.sdf\n'}
+[2.441343] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/models/sun/model-1_3.sdf\n'}
+[2.442111] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/models/sun/model.sdf\n'}
+[2.442826] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/urdf\n'}
+[2.443347] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/urdf/robot_ros2_control.xacro\n'}
+[2.443838] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/urdf/robot_description.urdf.xacro\n'}
+[2.444581] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/urdf/robot_description_gazebo.xacro\n'}
+[2.445354] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/rviz\n'}
+[2.445664] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/rviz/display.rviz\n'}
+[2.446277] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/launch\n'}
+[2.446573] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/launch/gazebo.launch.py\n'}
+[2.447137] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/launch/display.launch.py\n'}
+[2.448214] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/ament_index/resource_index/package_run_dependencies/robot_description\n'}
+[2.448703] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/ament_index/resource_index/parent_prefix_path/robot_description\n'}
+[2.449248] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/environment/ament_prefix_path.sh\n'}
+[2.449793] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/environment/ament_prefix_path.dsv\n'}
+[2.450118] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/environment/path.sh\n'}
+[2.450440] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/environment/path.dsv\n'}
+[2.450808] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/local_setup.bash\n'}
+[2.451222] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/local_setup.sh\n'}
+[2.451630] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/local_setup.zsh\n'}
+[2.451935] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/local_setup.dsv\n'}
+[2.452308] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/package.dsv\n'}
+[2.452817] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/ament_index/resource_index/packages/robot_description\n'}
+[2.453256] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/cmake/robot_descriptionConfig.cmake\n'}
+[2.453565] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/cmake/robot_descriptionConfig-version.cmake\n'}
+[2.453923] (robot_description) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_description/share/robot_description/package.xml\n'}
+[2.458876] (robot_description) CommandEnded: {'returncode': 0}
+[2.507123] (robot_description) JobEnded: {'identifier': 'robot_description', 'rc': 0}
+[2.525191] (-) TimerEvent: {}
+[2.598932] (robot_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.612066] (robot_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.625500] (-) TimerEvent: {}
+[2.726068] (-) TimerEvent: {}
+[2.827333] (-) TimerEvent: {}
+[2.891072] (robot_control) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.927631] (-) TimerEvent: {}
+[2.981223] (robot_control) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[3.027894] (-) TimerEvent: {}
+[3.034871] (robot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.092054] (robot_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.128347] (-) TimerEvent: {}
+[3.128863] (robot_control) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.228516] (-) TimerEvent: {}
+[3.303495] (robot_control) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.303826] (robot_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.328809] (-) TimerEvent: {}
+[3.429953] (-) TimerEvent: {}
+[3.469201] (robot_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.469906] (robot_control) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.530246] (-) TimerEvent: {}
+[3.628000] (robot_control) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.631167] (-) TimerEvent: {}
+[3.731847] (-) TimerEvent: {}
+[3.824753] (robot_control) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.825255] (robot_control) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/kareem/ros2_ws/src/robot_control/include\n'}
+[3.825400] (robot_control) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.826189] (robot_control) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.827479] (robot_control) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.828537] (robot_control) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.832585] (robot_control) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.832918] (-) TimerEvent: {}
+[3.833220] (robot_control) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.834308] (robot_control) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.839105] (robot_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.863576] (robot_control) StdoutLine: {'line': b'-- Generating done\n'}
+[3.874677] (robot_control) StdoutLine: {'line': b'-- Build files have been written to: /home/kareem/ros2_ws/src/build/robot_control\n'}
+[3.896249] (robot_control) CommandEnded: {'returncode': 0}
+[3.896991] (robot_control) JobProgress: {'identifier': 'robot_control', 'progress': 'build'}
+[3.898637] (robot_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kareem/ros2_ws/src/build/robot_control', '--', '-j16', '-l16'], 'cwd': '/home/kareem/ros2_ws/src/build/robot_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'kareem'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kareem/ros2_ws/install/robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kareem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1929'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kareem/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kareem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kareem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kareem-virtual-machine:@/tmp/.ICE-unix/1929,unix/kareem-virtual-machine:/tmp/.ICE-unix/1929'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8bc2299c_cb6d_4e48_ac29_cc1459f11390'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QEA022'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kareem/ros2_ws/src/build/robot_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kareem/ros2_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble')]), 'shell': False}
+[3.933404] (-) TimerEvent: {}
+[3.975177] (robot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.032456] (robot_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/simple_controller.dir/src/simple_controller.cpp.o\x1b[0m\n'}
+[4.033603] (-) TimerEvent: {}
+[4.134723] (-) TimerEvent: {}
+[4.238425] (-) TimerEvent: {}
+[4.339311] (-) TimerEvent: {}
+[4.363053] (robot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.414888] (robot_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[4.420943] (robot_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.440545] (-) TimerEvent: {}
+[4.475706] (robot_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[4.476028] (robot_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.476166] (robot_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.476298] (robot_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[4.526287] (robot_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.541324] (-) TimerEvent: {}
+[4.642251] (-) TimerEvent: {}
+[4.677767] (robot_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.743692] (-) TimerEvent: {}
+[4.765606] (robot_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.769022] (robot_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.780996] (robot_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.845525] (-) TimerEvent: {}
+[4.891648] (robot_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[4.922240] (robot_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/kareem/ros2_ws/src/build/robot_msgs\n'}
+[4.945662] (robot_msgs) CommandEnded: {'returncode': 0}
+[4.946591] (-) TimerEvent: {}
+[4.947172] (robot_msgs) JobProgress: {'identifier': 'robot_msgs', 'progress': 'build'}
+[4.948994] (robot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kareem/ros2_ws/src/build/robot_msgs', '--', '-j16', '-l16'], 'cwd': '/home/kareem/ros2_ws/src/build/robot_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'kareem'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kareem/ros2_ws/install/robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kareem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1929'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kareem/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kareem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kareem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kareem-virtual-machine:@/tmp/.ICE-unix/1929,unix/kareem-virtual-machine:/tmp/.ICE-unix/1929'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8bc2299c_cb6d_4e48_ac29_cc1459f11390'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QEA022'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kareem/ros2_ws/src/build/robot_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kareem/ros2_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble')]), 'shell': False}
+[5.046975] (-) TimerEvent: {}
+[5.047579] (robot_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[5.072133] (robot_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[5.105702] (robot_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_robot_msgs\n'}
+[5.147471] (-) TimerEvent: {}
+[5.248426] (-) TimerEvent: {}
+[5.349125] (-) TimerEvent: {}
+[5.451872] (-) TimerEvent: {}
+[5.553930] (-) TimerEvent: {}
+[5.654581] (-) TimerEvent: {}
+[5.755182] (-) TimerEvent: {}
+[5.774111] (robot_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[5.777816] (robot_msgs) StdoutLine: {'line': b'creating robot_msgs.egg-info\n'}
+[5.778141] (robot_msgs) StdoutLine: {'line': b'writing robot_msgs.egg-info/PKG-INFO\n'}
+[5.778321] (robot_msgs) StdoutLine: {'line': b'writing dependency_links to robot_msgs.egg-info/dependency_links.txt\n'}
+[5.778476] (robot_msgs) StdoutLine: {'line': b'writing top-level names to robot_msgs.egg-info/top_level.txt\n'}
+[5.778736] (robot_msgs) StdoutLine: {'line': b"writing manifest file 'robot_msgs.egg-info/SOURCES.txt'\n"}
+[5.785162] (robot_msgs) StdoutLine: {'line': b"reading manifest file 'robot_msgs.egg-info/SOURCES.txt'\n"}
+[5.786569] (robot_msgs) StdoutLine: {'line': b"writing manifest file 'robot_msgs.egg-info/SOURCES.txt'\n"}
+[5.827636] (robot_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/robot_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_msgs/srv/detail/get_transform__functions.c.o\x1b[0m\n'}
+[5.855562] (-) TimerEvent: {}
+[5.859685] (robot_msgs) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_build_robot_msgs_egg\n'}
+[5.880145] (robot_msgs) StdoutLine: {'line': b'[  9%] Built target robot_msgs__cpp\n'}
+[5.907006] (robot_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.907585] (robot_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.908134] (robot_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.955866] (-) TimerEvent: {}
+[5.992271] (robot_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library librobot_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[6.056136] (-) TimerEvent: {}
+[6.098188] (robot_msgs) StdoutLine: {'line': b'[ 22%] Built target robot_msgs__rosidl_generator_c\n'}
+[6.134150] (robot_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[6.134803] (robot_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.138065] (robot_msgs) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.157199] (-) TimerEvent: {}
+[6.257967] (-) TimerEvent: {}
+[6.358642] (-) TimerEvent: {}
+[6.459687] (-) TimerEvent: {}
+[6.547708] (robot_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/robot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_msgs/srv/get_transform__type_support.cpp.o\x1b[0m\n'}
+[6.560122] (-) TimerEvent: {}
+[6.662614] (-) TimerEvent: {}
+[6.682070] (robot_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/robot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_msgs/srv/detail/get_transform__type_support.cpp.o\x1b[0m\n'}
+[6.695211] (robot_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/robot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_msgs/srv/detail/dds_fastrtps/get_transform__type_support.cpp.o\x1b[0m\n'}
+[6.760961] (robot_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/robot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_msgs/srv/get_transform__type_support.cpp.o\x1b[0m\n'}
+[6.763387] (-) TimerEvent: {}
+[6.864926] (-) TimerEvent: {}
+[6.876716] (robot_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library librobot_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.882478] (robot_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/robot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_msgs/srv/detail/get_transform__type_support.c.o\x1b[0m\n'}
+[6.900953] (robot_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/robot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_msgs/srv/detail/get_transform__type_support_c.cpp.o\x1b[0m\n'}
+[6.965319] (-) TimerEvent: {}
+[6.999159] (robot_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library librobot_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[7.007924] (robot_msgs) StdoutLine: {'line': b'[ 58%] Built target robot_msgs__rosidl_typesupport_c\n'}
+[7.065645] (-) TimerEvent: {}
+[7.090341] (robot_msgs) StdoutLine: {'line': b'[ 58%] Built target robot_msgs__rosidl_typesupport_introspection_c\n'}
+[7.165925] (-) TimerEvent: {}
+[7.268796] (-) TimerEvent: {}
+[7.364447] (robot_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library librobot_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[7.369107] (-) TimerEvent: {}
+[7.470151] (-) TimerEvent: {}
+[7.471510] (robot_msgs) StdoutLine: {'line': b'[ 61%] Built target robot_msgs__rosidl_typesupport_cpp\n'}
+[7.571848] (-) TimerEvent: {}
+[7.672658] (-) TimerEvent: {}
+[7.773234] (-) TimerEvent: {}
+[7.818303] (robot_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library librobot_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[7.821146] (robot_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library librobot_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[7.864942] (robot_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library librobot_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[7.873569] (-) TimerEvent: {}
+[7.977990] (-) TimerEvent: {}
+[7.994234] (robot_msgs) StdoutLine: {'line': b'[ 70%] Built target robot_msgs__rosidl_typesupport_introspection_cpp\n'}
+[8.034207] (robot_msgs) StdoutLine: {'line': b'[ 70%] Built target robot_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[8.057136] (robot_msgs) StdoutLine: {'line': b'[ 70%] Built target robot_msgs__rosidl_typesupport_fastrtps_c\n'}
+[8.078610] (-) TimerEvent: {}
+[8.121284] (robot_msgs) StdoutLine: {'line': b'[ 70%] Built target robot_msgs\n'}
+[8.175165] (robot_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[8.179067] (-) TimerEvent: {}
+[8.280217] (-) TimerEvent: {}
+[8.381169] (-) TimerEvent: {}
+[8.482254] (-) TimerEvent: {}
+[8.583190] (-) TimerEvent: {}
+[8.685504] (-) TimerEvent: {}
+[8.786459] (-) TimerEvent: {}
+[8.887526] (-) TimerEvent: {}
+[8.988109] (-) TimerEvent: {}
+[9.080526] (robot_msgs) StdoutLine: {'line': b'[ 74%] Built target robot_msgs__py\n'}
+[9.088490] (-) TimerEvent: {}
+[9.127409] (robot_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/robot_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_msgs/srv/_get_transform_s.c.o\x1b[0m\n'}
+[9.188915] (-) TimerEvent: {}
+[9.289976] (-) TimerEvent: {}
+[9.390552] (-) TimerEvent: {}
+[9.451119] (robot_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_msgs/librobot_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[9.490812] (-) TimerEvent: {}
+[9.562956] (robot_msgs) StdoutLine: {'line': b'[ 80%] Built target robot_msgs__rosidl_generator_py\n'}
+[9.591187] (-) TimerEvent: {}
+[9.636736] (robot_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/robot_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[9.637175] (robot_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/robot_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[9.645322] (robot_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/robot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[9.691686] (-) TimerEvent: {}
+[9.792769] (-) TimerEvent: {}
+[9.893869] (-) TimerEvent: {}
+[9.911406] (robot_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_msgs/robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[9.911726] (robot_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_msgs/robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[9.919892] (robot_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_msgs/robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[9.996170] (-) TimerEvent: {}
+[10.011358] (robot_msgs) StdoutLine: {'line': b'[100%] Built target robot_msgs__rosidl_typesupport_c__pyext\n'}
+[10.011832] (robot_msgs) StdoutLine: {'line': b'[100%] Built target robot_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[10.026980] (robot_msgs) StdoutLine: {'line': b'[100%] Built target robot_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[10.056111] (robot_msgs) CommandEnded: {'returncode': 0}
+[10.060628] (robot_msgs) JobProgress: {'identifier': 'robot_msgs', 'progress': 'install'}
+[10.060751] (robot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kareem/ros2_ws/src/build/robot_msgs'], 'cwd': '/home/kareem/ros2_ws/src/build/robot_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'kareem'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kareem/ros2_ws/install/robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kareem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1929'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kareem/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kareem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kareem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kareem-virtual-machine:@/tmp/.ICE-unix/1929,unix/kareem-virtual-machine:/tmp/.ICE-unix/1929'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8bc2299c_cb6d_4e48_ac29_cc1459f11390'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QEA022'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kareem/ros2_ws/src/build/robot_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kareem/ros2_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble')]), 'shell': False}
+[10.080231] (robot_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.080771] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/ament_index/resource_index/rosidl_interfaces/robot_msgs\n'}
+[10.081347] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs\n'}
+[10.081792] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/msg\n'}
+[10.081945] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[10.082243] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv\n'}
+[10.082544] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail\n'}
+[10.082705] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/get_transform__functions.h\n'}
+[10.083033] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/get_transform__type_support.h\n'}
+[10.083323] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/get_transform__functions.c\n'}
+[10.083609] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/get_transform__struct.h\n'}
+[10.083907] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/get_transform.h\n'}
+[10.084508] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/environment/library_path.sh\n'}
+[10.084792] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/environment/library_path.dsv\n'}
+[10.085421] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/lib/librobot_msgs__rosidl_generator_c.so\n'}
+[10.086532] (robot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kareem/ros2_ws/src/install/robot_msgs/lib/librobot_msgs__rosidl_generator_c.so" to ""\n'}
+[10.086845] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs\n'}
+[10.087027] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/msg\n'}
+[10.087162] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[10.087363] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv\n'}
+[10.087601] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail\n'}
+[10.088009] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/get_transform__rosidl_typesupport_fastrtps_c.h\n'}
+[10.088154] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[10.093431] (robot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kareem/ros2_ws/src/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[10.093852] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs\n'}
+[10.096741] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/msg\n'}
+[10.097173] (-) TimerEvent: {}
+[10.097516] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[10.097832] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv\n'}
+[10.098100] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail\n'}
+[10.098554] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/get_transform__type_support.hpp\n'}
+[10.098697] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/get_transform__builder.hpp\n'}
+[10.098830] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/get_transform__struct.hpp\n'}
+[10.099004] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/get_transform__traits.hpp\n'}
+[10.099138] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/get_transform.hpp\n'}
+[10.099269] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs\n'}
+[10.099397] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/msg\n'}
+[10.099525] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[10.099722] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv\n'}
+[10.099853] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail\n'}
+[10.099979] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/dds_fastrtps\n'}
+[10.100104] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/get_transform__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.100362] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[10.100491] (robot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kareem/ros2_ws/src/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[10.100734] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs\n'}
+[10.100980] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/msg\n'}
+[10.101243] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[10.101529] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv\n'}
+[10.101756] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail\n'}
+[10.101990] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/get_transform__type_support.c\n'}
+[10.102203] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/get_transform__rosidl_typesupport_introspection_c.h\n'}
+[10.102575] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_introspection_c.so\n'}
+[10.102788] (robot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kareem/ros2_ws/src/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[10.103090] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_c.so\n'}
+[10.103220] (robot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kareem/ros2_ws/src/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_c.so" to ""\n'}
+[10.103347] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs\n'}
+[10.103555] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv\n'}
+[10.103723] (robot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail\n'}
+[10.103857] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/get_transform__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.103996] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/include/robot_msgs/robot_msgs/srv/detail/get_transform__type_support.cpp\n'}
+[10.104209] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[10.105321] (robot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kareem/ros2_ws/src/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[10.105628] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_cpp.so\n'}
+[10.106727] (robot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kareem/ros2_ws/src/install/robot_msgs/lib/librobot_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[10.107150] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/environment/pythonpath.sh\n'}
+[10.107539] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/environment/pythonpath.dsv\n'}
+[10.107876] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.0-py3.10.egg-info\n'}
+[10.108417] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[10.108885] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[10.109346] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[10.109727] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[10.110221] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs\n'}
+[10.110568] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.110847] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[10.111286] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[10.111634] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.113130] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv\n'}
+[10.113305] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/_get_transform.py\n'}
+[10.113578] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/_get_transform_s.c\n'}
+[10.113826] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/__init__.py\n'}
+[10.113963] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.114179] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/_robot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[10.114461] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/__init__.py\n'}
+[10.114821] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/librobot_msgs__rosidl_generator_py.so\n'}
+[10.197503] (-) TimerEvent: {}
+[10.202662] (robot_msgs) StdoutLine: {'line': b"Listing '/home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs'...\n"}
+[10.202977] (robot_msgs) StdoutLine: {'line': b"Compiling '/home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/__init__.py'...\n"}
+[10.203117] (robot_msgs) StdoutLine: {'line': b"Listing '/home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv'...\n"}
+[10.203251] (robot_msgs) StdoutLine: {'line': b"Compiling '/home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/__init__.py'...\n"}
+[10.203431] (robot_msgs) StdoutLine: {'line': b"Compiling '/home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/srv/_get_transform.py'...\n"}
+[10.213712] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.214050] (robot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[10.214194] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.214619] (robot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[10.215123] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.216051] (robot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages/robot_msgs/robot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[10.216363] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/lib/librobot_msgs__rosidl_generator_py.so\n'}
+[10.217455] (robot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/kareem/ros2_ws/src/install/robot_msgs/lib/librobot_msgs__rosidl_generator_py.so" to ""\n'}
+[10.217911] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/srv/GetTransform.idl\n'}
+[10.218289] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/srv/GetTransform.srv\n'}
+[10.218661] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/srv/GetTransform_Request.msg\n'}
+[10.219085] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/srv/GetTransform_Response.msg\n'}
+[10.219623] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/ament_index/resource_index/package_run_dependencies/robot_msgs\n'}
+[10.220149] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/ament_index/resource_index/parent_prefix_path/robot_msgs\n'}
+[10.220506] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/environment/ament_prefix_path.sh\n'}
+[10.220890] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/environment/ament_prefix_path.dsv\n'}
+[10.221254] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/environment/path.sh\n'}
+[10.221627] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/environment/path.dsv\n'}
+[10.221977] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/local_setup.bash\n'}
+[10.222325] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/local_setup.sh\n'}
+[10.222677] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/local_setup.zsh\n'}
+[10.223068] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/local_setup.dsv\n'}
+[10.223420] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/package.dsv\n'}
+[10.223913] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/ament_index/resource_index/packages/robot_msgs\n'}
+[10.224474] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_cExport.cmake\n'}
+[10.224836] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[10.225261] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[10.225617] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[10.226047] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_cppExport.cmake\n'}
+[10.226573] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[10.226882] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[10.227270] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[10.227625] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[10.228035] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cExport.cmake\n'}
+[10.228399] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[10.228792] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[10.229196] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[10.229625] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[10.230165] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/robot_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[10.233710] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_pyExport.cmake\n'}
+[10.234003] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/export_robot_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[10.234287] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[10.234551] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.234809] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.235090] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[10.235442] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[10.235662] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[10.236062] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[10.236403] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/robot_msgsConfig.cmake\n'}
+[10.236648] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake/robot_msgsConfig-version.cmake\n'}
+[10.237056] (robot_msgs) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/package.xml\n'}
+[10.246187] (robot_msgs) CommandEnded: {'returncode': 0}
+[10.297749] (-) TimerEvent: {}
+[10.299086] (robot_msgs) JobEnded: {'identifier': 'robot_msgs', 'rc': 0}
+[10.301605] (robot_tools_cpp) JobStarted: {'identifier': 'robot_tools_cpp'}
+[10.323848] (robot_tools_cpp) JobProgress: {'identifier': 'robot_tools_cpp', 'progress': 'cmake'}
+[10.326137] (robot_tools_cpp) Command: {'cmd': ['/usr/bin/cmake', '/home/kareem/ros2_ws/src/robot_tools_cpp', '-DCMAKE_INSTALL_PREFIX=/home/kareem/ros2_ws/src/install/robot_tools_cpp'], 'cwd': '/home/kareem/ros2_ws/src/build/robot_tools_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'kareem'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kareem/ros2_ws/src/install/robot_msgs/lib:/home/kareem/ros2_ws/install/robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kareem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1929'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kareem/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kareem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kareem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kareem-virtual-machine:@/tmp/.ICE-unix/1929,unix/kareem-virtual-machine:/tmp/.ICE-unix/1929'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8bc2299c_cb6d_4e48_ac29_cc1459f11390'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QEA022'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/kareem/ros2_ws/src/install/robot_msgs:/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kareem/ros2_ws/src/build/robot_tools_cpp'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages:/home/kareem/ros2_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kareem/ros2_ws/src/install/robot_msgs:/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble')]), 'shell': False}
+[10.398369] (-) TimerEvent: {}
+[10.460787] (robot_tools_cpp) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[10.499087] (-) TimerEvent: {}
+[10.578009] (robot_tools_cpp) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[10.594900] (robot_tools_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[10.599303] (-) TimerEvent: {}
+[10.700017] (-) TimerEvent: {}
+[10.751412] (robot_tools_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[10.770874] (robot_tools_cpp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[10.771480] (robot_tools_cpp) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[10.771844] (robot_tools_cpp) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[10.779668] (robot_tools_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[10.800399] (-) TimerEvent: {}
+[10.901265] (-) TimerEvent: {}
+[10.994771] (robot_tools_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[11.001516] (-) TimerEvent: {}
+[11.007855] (robot_tools_cpp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[11.008363] (robot_tools_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[11.009175] (robot_tools_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[11.015833] (robot_tools_cpp) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[11.101734] (-) TimerEvent: {}
+[11.202940] (-) TimerEvent: {}
+[11.304073] (-) TimerEvent: {}
+[11.348837] (robot_tools_cpp) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[11.404652] (-) TimerEvent: {}
+[11.507063] (-) TimerEvent: {}
+[11.603999] (robot_tools_cpp) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[11.607648] (-) TimerEvent: {}
+[11.708562] (-) TimerEvent: {}
+[11.709147] (robot_tools_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[11.723670] (robot_tools_cpp) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[11.743307] (robot_tools_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[11.776184] (robot_tools_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[11.808772] (-) TimerEvent: {}
+[11.825853] (robot_tools_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[11.909469] (-) TimerEvent: {}
+[11.924721] (robot_tools_cpp) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[12.010704] (-) TimerEvent: {}
+[12.111347] (-) TimerEvent: {}
+[12.147285] (robot_tools_cpp) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[12.159057] (robot_tools_cpp) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[12.211542] (-) TimerEvent: {}
+[12.314678] (-) TimerEvent: {}
+[12.394478] (robot_tools_cpp) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[12.414994] (-) TimerEvent: {}
+[12.460094] (robot_tools_cpp) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[12.515430] (-) TimerEvent: {}
+[12.558464] (robot_tools_cpp) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[12.584986] (robot_tools_cpp) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[12.616002] (-) TimerEvent: {}
+[12.717157] (-) TimerEvent: {}
+[12.761478] (robot_tools_cpp) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[12.761922] (robot_tools_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[12.818049] (-) TimerEvent: {}
+[12.919071] (-) TimerEvent: {}
+[12.934699] (robot_tools_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[12.936604] (robot_tools_cpp) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[13.019422] (-) TimerEvent: {}
+[13.120694] (-) TimerEvent: {}
+[13.221611] (-) TimerEvent: {}
+[13.326610] (-) TimerEvent: {}
+[13.376103] (robot_tools_cpp) StdoutLine: {'line': b'-- Found robot_msgs: 0.0.0 (/home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake)\n'}
+[13.428822] (-) TimerEvent: {}
+[13.459007] (robot_tools_cpp) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[13.530505] (-) TimerEvent: {}
+[13.631767] (-) TimerEvent: {}
+[13.733481] (-) TimerEvent: {}
+[13.762065] (robot_tools_cpp) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[13.762584] (robot_tools_cpp) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/kareem/ros2_ws/src/robot_tools_cpp/include\n'}
+[13.762905] (robot_tools_cpp) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[13.764398] (robot_tools_cpp) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[13.767073] (robot_tools_cpp) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[13.767487] (robot_tools_cpp) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[13.769208] (robot_tools_cpp) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[13.774180] (robot_tools_cpp) StdoutLine: {'line': b'-- Configuring done\n'}
+[13.823803] (robot_tools_cpp) StdoutLine: {'line': b'-- Generating done\n'}
+[13.831934] (robot_tools_cpp) StdoutLine: {'line': b'-- Build files have been written to: /home/kareem/ros2_ws/src/build/robot_tools_cpp\n'}
+[13.833809] (-) TimerEvent: {}
+[13.856691] (robot_tools_cpp) CommandEnded: {'returncode': 0}
+[13.857922] (robot_tools_cpp) JobProgress: {'identifier': 'robot_tools_cpp', 'progress': 'build'}
+[13.859873] (robot_tools_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kareem/ros2_ws/src/build/robot_tools_cpp', '--', '-j16', '-l16'], 'cwd': '/home/kareem/ros2_ws/src/build/robot_tools_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'kareem'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kareem/ros2_ws/src/install/robot_msgs/lib:/home/kareem/ros2_ws/install/robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kareem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1929'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kareem/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kareem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kareem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kareem-virtual-machine:@/tmp/.ICE-unix/1929,unix/kareem-virtual-machine:/tmp/.ICE-unix/1929'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8bc2299c_cb6d_4e48_ac29_cc1459f11390'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QEA022'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/kareem/ros2_ws/src/install/robot_msgs:/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kareem/ros2_ws/src/build/robot_tools_cpp'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages:/home/kareem/ros2_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kareem/ros2_ws/src/install/robot_msgs:/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble')]), 'shell': False}
+[13.934728] (-) TimerEvent: {}
+[14.036569] (-) TimerEvent: {}
+[14.067942] (robot_tools_cpp) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/simple_tf_kinematics.dir/src/simple_tf_kinematics.cpp.o\x1b[0m\n'}
+[14.137542] (-) TimerEvent: {}
+[14.238101] (-) TimerEvent: {}
+[14.338826] (-) TimerEvent: {}
+[14.442193] (-) TimerEvent: {}
+[14.543004] (-) TimerEvent: {}
+[14.644199] (-) TimerEvent: {}
+[14.744733] (-) TimerEvent: {}
+[14.845986] (-) TimerEvent: {}
+[14.948644] (-) TimerEvent: {}
+[15.049367] (-) TimerEvent: {}
+[15.154548] (-) TimerEvent: {}
+[15.256230] (-) TimerEvent: {}
+[15.357955] (-) TimerEvent: {}
+[15.458520] (-) TimerEvent: {}
+[15.560070] (-) TimerEvent: {}
+[15.661316] (-) TimerEvent: {}
+[15.762975] (-) TimerEvent: {}
+[15.863607] (-) TimerEvent: {}
+[15.964147] (-) TimerEvent: {}
+[16.065387] (-) TimerEvent: {}
+[16.167108] (-) TimerEvent: {}
+[16.268686] (-) TimerEvent: {}
+[16.369635] (-) TimerEvent: {}
+[16.470765] (-) TimerEvent: {}
+[16.573911] (-) TimerEvent: {}
+[16.675488] (-) TimerEvent: {}
+[16.776503] (-) TimerEvent: {}
+[16.877819] (-) TimerEvent: {}
+[16.978735] (-) TimerEvent: {}
+[17.079640] (-) TimerEvent: {}
+[17.180639] (-) TimerEvent: {}
+[17.282135] (-) TimerEvent: {}
+[17.383029] (-) TimerEvent: {}
+[17.483961] (-) TimerEvent: {}
+[17.584845] (-) TimerEvent: {}
+[17.685506] (-) TimerEvent: {}
+[17.786659] (-) TimerEvent: {}
+[17.887574] (-) TimerEvent: {}
+[17.988574] (-) TimerEvent: {}
+[18.089602] (-) TimerEvent: {}
+[18.190196] (-) TimerEvent: {}
+[18.291147] (-) TimerEvent: {}
+[18.392220] (-) TimerEvent: {}
+[18.493221] (-) TimerEvent: {}
+[18.594070] (-) TimerEvent: {}
+[18.694982] (-) TimerEvent: {}
+[18.796008] (-) TimerEvent: {}
+[18.897046] (-) TimerEvent: {}
+[18.997682] (-) TimerEvent: {}
+[19.098542] (-) TimerEvent: {}
+[19.199582] (-) TimerEvent: {}
+[19.300592] (-) TimerEvent: {}
+[19.401626] (-) TimerEvent: {}
+[19.502643] (-) TimerEvent: {}
+[19.603677] (-) TimerEvent: {}
+[19.704504] (-) TimerEvent: {}
+[19.805260] (-) TimerEvent: {}
+[19.906130] (-) TimerEvent: {}
+[20.007163] (-) TimerEvent: {}
+[20.108169] (-) TimerEvent: {}
+[20.209168] (-) TimerEvent: {}
+[20.310195] (-) TimerEvent: {}
+[20.411267] (-) TimerEvent: {}
+[20.512274] (-) TimerEvent: {}
+[20.613191] (-) TimerEvent: {}
+[20.714171] (-) TimerEvent: {}
+[20.815157] (-) TimerEvent: {}
+[20.916229] (-) TimerEvent: {}
+[21.017290] (-) TimerEvent: {}
+[21.118146] (-) TimerEvent: {}
+[21.219230] (-) TimerEvent: {}
+[21.320203] (-) TimerEvent: {}
+[21.421217] (-) TimerEvent: {}
+[21.522076] (-) TimerEvent: {}
+[21.623134] (-) TimerEvent: {}
+[21.724151] (-) TimerEvent: {}
+[21.825180] (-) TimerEvent: {}
+[21.926170] (-) TimerEvent: {}
+[22.027179] (-) TimerEvent: {}
+[22.128211] (-) TimerEvent: {}
+[22.229243] (-) TimerEvent: {}
+[22.330090] (-) TimerEvent: {}
+[22.430960] (-) TimerEvent: {}
+[22.531983] (-) TimerEvent: {}
+[22.633031] (-) TimerEvent: {}
+[22.734062] (-) TimerEvent: {}
+[22.835078] (-) TimerEvent: {}
+[22.936121] (-) TimerEvent: {}
+[23.036615] (-) TimerEvent: {}
+[23.137533] (-) TimerEvent: {}
+[23.238525] (-) TimerEvent: {}
+[23.339563] (-) TimerEvent: {}
+[23.440600] (-) TimerEvent: {}
+[23.541637] (-) TimerEvent: {}
+[23.642642] (-) TimerEvent: {}
+[23.743384] (-) TimerEvent: {}
+[23.844380] (-) TimerEvent: {}
+[23.945399] (-) TimerEvent: {}
+[24.046525] (-) TimerEvent: {}
+[24.147317] (-) TimerEvent: {}
+[24.248333] (-) TimerEvent: {}
+[24.349306] (-) TimerEvent: {}
+[24.450329] (-) TimerEvent: {}
+[24.551418] (-) TimerEvent: {}
+[24.652277] (-) TimerEvent: {}
+[24.753165] (-) TimerEvent: {}
+[24.854146] (-) TimerEvent: {}
+[24.955187] (-) TimerEvent: {}
+[25.056085] (-) TimerEvent: {}
+[25.157125] (-) TimerEvent: {}
+[25.258109] (-) TimerEvent: {}
+[25.359131] (-) TimerEvent: {}
+[25.460161] (-) TimerEvent: {}
+[25.561171] (-) TimerEvent: {}
+[25.662235] (-) TimerEvent: {}
+[25.763258] (-) TimerEvent: {}
+[25.864274] (-) TimerEvent: {}
+[25.965284] (-) TimerEvent: {}
+[26.066306] (-) TimerEvent: {}
+[26.167560] (-) TimerEvent: {}
+[26.268352] (-) TimerEvent: {}
+[26.369373] (-) TimerEvent: {}
+[26.470290] (-) TimerEvent: {}
+[26.571338] (-) TimerEvent: {}
+[26.672378] (-) TimerEvent: {}
+[26.773365] (-) TimerEvent: {}
+[26.874420] (-) TimerEvent: {}
+[26.975414] (-) TimerEvent: {}
+[27.076442] (-) TimerEvent: {}
+[27.177314] (-) TimerEvent: {}
+[27.278377] (-) TimerEvent: {}
+[27.379032] (-) TimerEvent: {}
+[27.479754] (-) TimerEvent: {}
+[27.580808] (-) TimerEvent: {}
+[27.681776] (-) TimerEvent: {}
+[27.782655] (-) TimerEvent: {}
+[27.883698] (-) TimerEvent: {}
+[27.984371] (-) TimerEvent: {}
+[28.085417] (-) TimerEvent: {}
+[28.186452] (-) TimerEvent: {}
+[28.287458] (-) TimerEvent: {}
+[28.388319] (-) TimerEvent: {}
+[28.489363] (-) TimerEvent: {}
+[28.589971] (-) TimerEvent: {}
+[28.691102] (-) TimerEvent: {}
+[28.792143] (-) TimerEvent: {}
+[28.892984] (-) TimerEvent: {}
+[28.993507] (-) TimerEvent: {}
+[29.077482] (robot_tools_cpp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable simple_tf_kinematics\x1b[0m\n'}
+[29.094956] (-) TimerEvent: {}
+[29.195517] (-) TimerEvent: {}
+[29.297566] (-) TimerEvent: {}
+[29.398378] (-) TimerEvent: {}
+[29.499365] (-) TimerEvent: {}
+[29.600403] (-) TimerEvent: {}
+[29.701116] (-) TimerEvent: {}
+[29.803060] (-) TimerEvent: {}
+[29.870262] (robot_tools_cpp) StdoutLine: {'line': b'[100%] Built target simple_tf_kinematics\n'}
+[29.899235] (robot_tools_cpp) CommandEnded: {'returncode': 0}
+[29.900643] (robot_tools_cpp) JobProgress: {'identifier': 'robot_tools_cpp', 'progress': 'install'}
+[29.902181] (robot_tools_cpp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kareem/ros2_ws/src/build/robot_tools_cpp'], 'cwd': '/home/kareem/ros2_ws/src/build/robot_tools_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'kareem'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kareem/ros2_ws/src/install/robot_msgs/lib:/home/kareem/ros2_ws/install/robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kareem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1929'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kareem/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kareem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kareem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kareem-virtual-machine:@/tmp/.ICE-unix/1929,unix/kareem-virtual-machine:/tmp/.ICE-unix/1929'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8bc2299c_cb6d_4e48_ac29_cc1459f11390'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QEA022'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/kareem/ros2_ws/src/install/robot_msgs:/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kareem/ros2_ws/src/build/robot_tools_cpp'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages:/home/kareem/ros2_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kareem/ros2_ws/src/install/robot_msgs:/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble')]), 'shell': False}
+[29.903720] (-) TimerEvent: {}
+[29.917969] (robot_tools_cpp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[29.918280] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/include/include\n'}
+[29.918630] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/include/include/robot_tools_cpp\n'}
+[29.918787] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/include/include/robot_tools_cpp/simple_tf_kinematics.hpp\n'}
+[29.919281] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/lib/robot_tools_cpp/simple_tf_kinematics\n'}
+[29.923610] (robot_tools_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/kareem/ros2_ws/src/install/robot_tools_cpp/lib/robot_tools_cpp/simple_tf_kinematics" to ""\n'}
+[29.924054] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/ament_index/resource_index/package_run_dependencies/robot_tools_cpp\n'}
+[29.924559] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/ament_index/resource_index/parent_prefix_path/robot_tools_cpp\n'}
+[29.925088] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/environment/ament_prefix_path.sh\n'}
+[29.925496] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/environment/ament_prefix_path.dsv\n'}
+[29.925797] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/environment/path.sh\n'}
+[29.926149] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/environment/path.dsv\n'}
+[29.926548] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/local_setup.bash\n'}
+[29.926896] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/local_setup.sh\n'}
+[29.927301] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/local_setup.zsh\n'}
+[29.927694] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/local_setup.dsv\n'}
+[29.928203] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/package.dsv\n'}
+[29.928586] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/ament_index/resource_index/packages/robot_tools_cpp\n'}
+[29.928993] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/cmake/robot_tools_cppConfig.cmake\n'}
+[29.929311] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/cmake/robot_tools_cppConfig-version.cmake\n'}
+[29.929864] (robot_tools_cpp) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/package.xml\n'}
+[29.935597] (robot_tools_cpp) CommandEnded: {'returncode': 0}
+[29.970782] (robot_tools_cpp) JobEnded: {'identifier': 'robot_tools_cpp', 'rc': 0}
+[30.003915] (-) TimerEvent: {}
+[30.107542] (-) TimerEvent: {}
+[30.208349] (-) TimerEvent: {}
+[30.309059] (-) TimerEvent: {}
+[30.412421] (-) TimerEvent: {}
+[30.517042] (-) TimerEvent: {}
+[30.617596] (-) TimerEvent: {}
+[30.718368] (-) TimerEvent: {}
+[30.820536] (-) TimerEvent: {}
+[30.921590] (-) TimerEvent: {}
+[31.022472] (-) TimerEvent: {}
+[31.123444] (-) TimerEvent: {}
+[31.224239] (-) TimerEvent: {}
+[31.324949] (-) TimerEvent: {}
+[31.426025] (-) TimerEvent: {}
+[31.526870] (-) TimerEvent: {}
+[31.627751] (-) TimerEvent: {}
+[31.728747] (-) TimerEvent: {}
+[31.829842] (-) TimerEvent: {}
+[31.931806] (-) TimerEvent: {}
+[32.032675] (-) TimerEvent: {}
+[32.133139] (-) TimerEvent: {}
+[32.234823] (-) TimerEvent: {}
+[32.335707] (-) TimerEvent: {}
+[32.439734] (-) TimerEvent: {}
+[32.540565] (-) TimerEvent: {}
+[32.641227] (-) TimerEvent: {}
+[32.742213] (-) TimerEvent: {}
+[32.843319] (-) TimerEvent: {}
+[32.944472] (-) TimerEvent: {}
+[33.045139] (-) TimerEvent: {}
+[33.146125] (-) TimerEvent: {}
+[33.247155] (-) TimerEvent: {}
+[33.348590] (-) TimerEvent: {}
+[33.449203] (-) TimerEvent: {}
+[33.479334] (robot_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable simple_controller\x1b[0m\n'}
+[33.549594] (-) TimerEvent: {}
+[33.650341] (-) TimerEvent: {}
+[33.751486] (-) TimerEvent: {}
+[33.852376] (-) TimerEvent: {}
+[33.954354] (-) TimerEvent: {}
+[34.055633] (-) TimerEvent: {}
+[34.156341] (-) TimerEvent: {}
+[34.258339] (-) TimerEvent: {}
+[34.361513] (-) TimerEvent: {}
+[34.462091] (-) TimerEvent: {}
+[34.562618] (-) TimerEvent: {}
+[34.663759] (-) TimerEvent: {}
+[34.749904] (robot_control) StdoutLine: {'line': b'[100%] Built target simple_controller\n'}
+[34.764563] (-) TimerEvent: {}
+[34.781259] (robot_control) CommandEnded: {'returncode': 0}
+[34.782647] (robot_control) JobProgress: {'identifier': 'robot_control', 'progress': 'install'}
+[34.784386] (robot_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kareem/ros2_ws/src/build/robot_control'], 'cwd': '/home/kareem/ros2_ws/src/build/robot_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'kareem'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kareem/ros2_ws/install/robot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kareem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1929'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kareem/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kareem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kareem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kareem-virtual-machine:@/tmp/.ICE-unix/1929,unix/kareem-virtual-machine:/tmp/.ICE-unix/1929'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8bc2299c_cb6d_4e48_ac29_cc1459f11390'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QEA022'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kareem/ros2_ws/src/build/robot_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fe8910196309b3cbac8c54267c0124a'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kareem/ros2_ws/install/robot_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble')]), 'shell': False}
+[34.802354] (robot_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[34.802813] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/include/include\n'}
+[34.803043] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/include/include/robot_control\n'}
+[34.803420] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/include/include/robot_control/simple_controller.hpp\n'}
+[34.803978] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/robot_control/simple_controller\n'}
+[34.821677] (robot_control) StdoutLine: {'line': b'-- Set runtime path of "/home/kareem/ros2_ws/src/install/robot_control/share/robot_control/simple_controller" to ""\n'}
+[34.822099] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/robot_control/config\n'}
+[34.822388] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/robot_control/config/robot_controllers.yaml\n'}
+[34.827757] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/robot_control/launch\n'}
+[34.828409] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/robot_control/launch/controller.launch.py\n'}
+[34.830034] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/ament_index/resource_index/package_run_dependencies/robot_control\n'}
+[34.831062] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/ament_index/resource_index/parent_prefix_path/robot_control\n'}
+[34.831520] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/robot_control/environment/ament_prefix_path.sh\n'}
+[34.831821] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/robot_control/environment/ament_prefix_path.dsv\n'}
+[34.832216] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/robot_control/environment/path.sh\n'}
+[34.832474] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/robot_control/environment/path.dsv\n'}
+[34.832892] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/robot_control/local_setup.bash\n'}
+[34.833235] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/robot_control/local_setup.sh\n'}
+[34.833664] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/robot_control/local_setup.zsh\n'}
+[34.833961] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/robot_control/local_setup.dsv\n'}
+[34.834316] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/robot_control/package.dsv\n'}
+[34.834966] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/ament_index/resource_index/packages/robot_control\n'}
+[34.835405] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/robot_control/cmake/robot_controlConfig.cmake\n'}
+[34.835690] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/robot_control/cmake/robot_controlConfig-version.cmake\n'}
+[34.838091] (robot_control) StdoutLine: {'line': b'-- Installing: /home/kareem/ros2_ws/src/install/robot_control/share/robot_control/package.xml\n'}
+[34.840799] (robot_control) CommandEnded: {'returncode': 0}
+[34.865081] (-) TimerEvent: {}
+[34.866207] (robot_control) JobEnded: {'identifier': 'robot_control', 'rc': 0}
+[34.868050] (-) EventReactorShutdown: {}

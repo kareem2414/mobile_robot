@@ -1,0 +1,73 @@
+[0.029s] Invoking command in '/home/kareem/ros2_ws/src/build/robot_tools_cpp': AMENT_PREFIX_PATH=/home/kareem/ros2_ws/src/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kareem/ros2_ws/src/install/robot_msgs:/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble LD_LIBRARY_PATH=/home/kareem/ros2_ws/src/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kareem/ros2_ws/src/robot_tools_cpp -DCMAKE_INSTALL_PREFIX=/home/kareem/ros2_ws/src/install/robot_tools_cpp
+[0.159s] -- The C compiler identification is GNU 11.4.0
+[0.277s] -- The CXX compiler identification is GNU 11.4.0
+[0.294s] -- Detecting C compiler ABI info
+[0.450s] -- Detecting C compiler ABI info - done
+[0.469s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.470s] -- Detecting C compile features
+[0.470s] -- Detecting C compile features - done
+[0.478s] -- Detecting CXX compiler ABI info
+[0.693s] -- Detecting CXX compiler ABI info - done
+[0.706s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.707s] -- Detecting CXX compile features
+[0.708s] -- Detecting CXX compile features - done
+[0.714s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.047s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.303s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.408s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.422s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.442s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.475s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.524s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.623s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.846s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.858s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.093s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.159s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.257s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.284s] -- Looking for pthread.h
+[2.460s] -- Looking for pthread.h - found
+[2.460s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.633s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.635s] -- Found Threads: TRUE  
+[3.075s] -- Found robot_msgs: 0.0.0 (/home/kareem/ros2_ws/src/install/robot_msgs/share/robot_msgs/cmake)
+[3.158s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.461s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.461s] -- Configured cppcheck include dirs: /home/kareem/ros2_ws/src/robot_tools_cpp/include
+[3.461s] -- Configured cppcheck exclude dirs and/or files: 
+[3.463s] -- Added test 'lint_cmake' to check CMake code style
+[3.466s] -- Added test 'uncrustify' to check C / C++ code style
+[3.466s] -- Configured uncrustify additional arguments: 
+[3.468s] -- Added test 'xmllint' to check XML markup files
+[3.473s] -- Configuring done
+[3.522s] -- Generating done
+[3.530s] -- Build files have been written to: /home/kareem/ros2_ws/src/build/robot_tools_cpp
+[3.555s] Invoked command in '/home/kareem/ros2_ws/src/build/robot_tools_cpp' returned '0': AMENT_PREFIX_PATH=/home/kareem/ros2_ws/src/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kareem/ros2_ws/src/install/robot_msgs:/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble LD_LIBRARY_PATH=/home/kareem/ros2_ws/src/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kareem/ros2_ws/src/robot_tools_cpp -DCMAKE_INSTALL_PREFIX=/home/kareem/ros2_ws/src/install/robot_tools_cpp
+[3.559s] Invoking command in '/home/kareem/ros2_ws/src/build/robot_tools_cpp': AMENT_PREFIX_PATH=/home/kareem/ros2_ws/src/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kareem/ros2_ws/src/install/robot_msgs:/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble LD_LIBRARY_PATH=/home/kareem/ros2_ws/src/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kareem/ros2_ws/src/build/robot_tools_cpp -- -j16 -l16
+[3.767s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_tf_kinematics.dir/src/simple_tf_kinematics.cpp.o[0m
+[18.776s] [100%] [32m[1mLinking CXX executable simple_tf_kinematics[0m
+[19.569s] [100%] Built target simple_tf_kinematics
+[19.598s] Invoked command in '/home/kareem/ros2_ws/src/build/robot_tools_cpp' returned '0': AMENT_PREFIX_PATH=/home/kareem/ros2_ws/src/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kareem/ros2_ws/src/install/robot_msgs:/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble LD_LIBRARY_PATH=/home/kareem/ros2_ws/src/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kareem/ros2_ws/src/build/robot_tools_cpp -- -j16 -l16
+[19.602s] Invoking command in '/home/kareem/ros2_ws/src/build/robot_tools_cpp': AMENT_PREFIX_PATH=/home/kareem/ros2_ws/src/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kareem/ros2_ws/src/install/robot_msgs:/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble LD_LIBRARY_PATH=/home/kareem/ros2_ws/src/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kareem/ros2_ws/src/build/robot_tools_cpp
+[19.616s] -- Install configuration: ""
+[19.617s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/include/include
+[19.617s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/include/include/robot_tools_cpp
+[19.617s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/include/include/robot_tools_cpp/simple_tf_kinematics.hpp
+[19.618s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/lib/robot_tools_cpp/simple_tf_kinematics
+[19.622s] -- Set runtime path of "/home/kareem/ros2_ws/src/install/robot_tools_cpp/lib/robot_tools_cpp/simple_tf_kinematics" to ""
+[19.622s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/ament_index/resource_index/package_run_dependencies/robot_tools_cpp
+[19.623s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/ament_index/resource_index/parent_prefix_path/robot_tools_cpp
+[19.624s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/environment/ament_prefix_path.sh
+[19.624s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/environment/ament_prefix_path.dsv
+[19.624s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/environment/path.sh
+[19.625s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/environment/path.dsv
+[19.625s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/local_setup.bash
+[19.625s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/local_setup.sh
+[19.626s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/local_setup.zsh
+[19.626s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/local_setup.dsv
+[19.627s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/package.dsv
+[19.627s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/ament_index/resource_index/packages/robot_tools_cpp
+[19.627s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/cmake/robot_tools_cppConfig.cmake
+[19.628s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/cmake/robot_tools_cppConfig-version.cmake
+[19.628s] -- Installing: /home/kareem/ros2_ws/src/install/robot_tools_cpp/share/robot_tools_cpp/package.xml
+[19.635s] Invoked command in '/home/kareem/ros2_ws/src/build/robot_tools_cpp' returned '0': AMENT_PREFIX_PATH=/home/kareem/ros2_ws/src/install/robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kareem/ros2_ws/src/install/robot_msgs:/home/kareem/ros2_ws/install/robot_tools_cpp:/home/kareem/ros2_ws/install/robot_msgs:/home/kareem/ros2_ws/install/robot_description:/home/kareem/ros2_ws/install/robot_control:/opt/ros/humble LD_LIBRARY_PATH=/home/kareem/ros2_ws/src/install/robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kareem/ros2_ws/src/install/robot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kareem/ros2_ws/src/build/robot_tools_cpp

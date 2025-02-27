@@ -1,0 +1,6 @@
+{
+  "package_name": "robot_msgs",
+  "non_idl_tuples": [
+    "/home/kareem/ros2_ws/src/robot_msgs:srv/GetTransform.srv"
+  ]
+}

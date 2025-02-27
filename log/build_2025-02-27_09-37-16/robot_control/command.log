@@ -1,0 +1,6 @@
+Invoking command in '/home/kareem/ros2_ws/src/build/robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kareem/ros2_ws/src/robot_control -DCMAKE_INSTALL_PREFIX=/home/kareem/ros2_ws/src/install/robot_control
+Invoked command in '/home/kareem/ros2_ws/src/build/robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kareem/ros2_ws/src/robot_control -DCMAKE_INSTALL_PREFIX=/home/kareem/ros2_ws/src/install/robot_control
+Invoking command in '/home/kareem/ros2_ws/src/build/robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kareem/ros2_ws/src/build/robot_control -- -j16 -l16
+Invoked command in '/home/kareem/ros2_ws/src/build/robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kareem/ros2_ws/src/build/robot_control -- -j16 -l16
+Invoking command in '/home/kareem/ros2_ws/src/build/robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kareem/ros2_ws/src/build/robot_control
+Invoked command in '/home/kareem/ros2_ws/src/build/robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kareem/ros2_ws/src/build/robot_control

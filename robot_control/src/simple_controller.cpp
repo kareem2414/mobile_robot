@@ -7,6 +7,9 @@ SimpleController::SimpleController(const std::string & name)
     : Node(name)
     , left_wheel_prev_pose_(0.0)
     , right_wheel_prev_pose_(0.0)
+    , x_(0.0)
+    , y_(0.0)
+    , theta_(0.0)
 {
     declare_parameter("wheel_radius",0.033);
     declare_parameter("wheel_seperation",0.17);
@@ -63,11 +66,23 @@ void SimpleController::jointCallback(const sensor_msgs::msg::JointState &msg)
     double linear = (wheel_radius_ * fi_right + wheel_radius_ * fi_left) / 2;
     double angular = (wheel_radius_ * fi_right - wheel_radius_ * fi_left) / wheel_seperation_;
 
-    RCLCPP_INFO_STREAM(get_logger(), "Linear: " << linear << 
-                    "angular: " << angular);
+    double d_s = (wheel_radius_ * dp_right + wheel_radius_ * dp_left) / 2;
+    double d_theta = (wheel_radius_ * dp_right - wheel_radius_ * dp_left) / wheel_seperation_;
+
+    theta_ += d_theta;
+    x_ += d_s * cos(theta_);
+    y_ += d_s * sin(theta_);
+
+    RCLCPP_INFO_STREAM(get_logger(), "Linear: " << linear << " angular: "  << angular << std::endl);
+    RCLCPP_INFO_STREAM(get_logger(), "X: " << x_ << " Y: " << y_ <<" Theta: " << theta_ << std::endl);
 }
 
 int main(int argc, char* argv[])
 {
+    rclcpp::init(argc,argv);
+    auto node = std::make_shared<SimpleController>("simple_controller");
+    rclcpp::spin(node);
+    rclcpp::shutdown();
+    return 0;
 
 }

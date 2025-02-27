@@ -7,6 +7,8 @@
       },
       "includePath": [
         "/home/kareem/ros2_ws/install/robot_tools_cpp/include/**",
+        "/home/kareem/ros2_ws/install/robot_msgs/include/**",
+        "/home/kareem/ros2_ws/install/robot_control/include/**",
         "/opt/ros/humble/include/**",
         "/home/kareem/ros2_ws/src/robot_control/include/**",
         "/home/kareem/ros2_ws/src/robot_description/include/**",
