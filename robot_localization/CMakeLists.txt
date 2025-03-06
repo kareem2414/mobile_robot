@@ -20,6 +20,11 @@ add_executable(imu_republisher src/imu_republisher.cpp)
 ament_target_dependencies(imu_republisher rclcpp sensor_msgs)
 
 install(
+  DIRECTORY launch config
+  DESTINATION share/${PROJECT_NAME}
+)
+
+install(
   DIRECTORY include
   DESTINATION include
 )
