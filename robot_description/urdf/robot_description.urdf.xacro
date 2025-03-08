@@ -21,6 +21,7 @@
       <geometry>
         <mesh filename="package://robot_description/meshes/base_link.STL" />
       </geometry>
+      <material name="red"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -49,6 +50,7 @@
       <geometry>
         <mesh filename="package://robot_description/meshes/right_wheel.STL" />
       </geometry>
+      <material name="blue"/>
     </visual>
     <collision>
       <origin xyz="0 -0.015 0" rpy="1.57 0 0" />
@@ -79,6 +81,7 @@
       <geometry>
         <mesh filename="package://robot_description/meshes/left_wheel.STL" />
       </geometry>
+      <material name="blue"/>
     </visual>
     <collision>
       <origin xyz="0 0.015 0" rpy="-1.57 0 0" />
@@ -108,6 +111,7 @@
       <geometry>
         <mesh filename="package://robot_description/meshes/front_caster.STL" />
       </geometry>
+      <material name="silver"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -137,6 +141,7 @@
       <geometry>
         <mesh filename="package://robot_description/meshes/rear_caster.STL" />
       </geometry>
+      <material name="silver"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -166,6 +171,7 @@
       <geometry>
         <mesh filename="package://robot_description/meshes/imu_link.STL"/>
       </geometry>
+      <material name="blue"/>
     </visual>
     <collision>
       <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
@@ -180,5 +186,18 @@
     <parent link="base_link"/>
     <child link="imu_link"/>
   </joint>
+
+  <material name="blue">
+    <color rgba="0 0 1 1"/>
+  </material>
+  <material name="black">
+    <color rgba="0 0 0 1"/>
+  </material>
+  <material name="silver">
+    <color rgba="0.79 0.82 0.93 1"/>
+  </material>
+  <material name="dark_grey">
+    <color rgba="0.3 0.3 0.3 1"/>
+  </material>
 
 </robot>
