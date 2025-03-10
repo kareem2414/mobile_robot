@@ -3,7 +3,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mobile_robot">
     <ros2_control type="system" name="RobotSystem">
         <hardware>
-            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+            <plugin>ign_ros2_control/IgnitionSystem</plugin>
         </hardware>
 
         <joint name="right_wheel_joint">
